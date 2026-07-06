@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mr7ljv76dej0j",
+    "timestamp": "2026-07-05T09:36:35.250Z",
+    "name": "Applicant Test",
+    "email": "candidate@example.com",
+    "phone": "9998887776",
+    "position": "Junior React Developer",
+    "portfolioUrl": "https://github.com/testcandidate",
+    "message": "Hello HR, I am excited to apply for this role and join Arha."
+  }
+]
