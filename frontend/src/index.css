@@ -597,48 +597,6 @@ section {
 
 }
 
-/* fade effect */
-
-.technology-marquee::before,
-
-.technology-marquee::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    width:160px;
-
-    height:100%;
-
-    z-index:5;
-
-    pointer-events:none;
-
-}
-
-.technology-marquee::before{
-
-    background:linear-gradient(
-        to right,
-        var(--color-bg-darker) 0%,
-        rgba(255,255,255,0) 100%
-    );
-
-}
-
-.technology-marquee::after{
-
-    background:linear-gradient(
-        to left,
-        var(--color-bg-darker) 0%,
-        rgba(255,255,255,0) 100%
-    );
-
-}
-
 .technology-track{
 
     display:flex;
@@ -959,12 +917,4 @@ section {
 
     }
 
-    .technology-marquee::before,
-
-    .technology-marquee::after{
-
-        width:60px;
-
-    }
-
-}
+   }
