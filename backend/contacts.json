@@ -1,0 +1,11 @@
+[
+  {
+    "id": "mr7ljasvfnjib",
+    "timestamp": "2026-07-05T09:36:08.815Z",
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone": "9876543210",
+    "subject": "Test Inquiry",
+    "message": "Hello Arha Team, this is a test message to verify the email notification system."
+  }
+]
