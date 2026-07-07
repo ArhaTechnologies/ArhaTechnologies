@@ -155,6 +155,9 @@ export default function Contact() {
                   <a href="tel:+916353488481" className="hover-glow-link" style={{ color: 'var(--color-text-secondary)', fontWeight: '500' }}>
                     +91 63534 88481 (Alternative)
                   </a>
+				   <a href="tel:+917600432463" className="hover-glow-link" style={{ color: 'var(--color-text-secondary)', fontWeight: '500' }}>
+                    +91 76004 32463 (Alternative)
+                  </a>
                 </div>
               </div>
             </div>

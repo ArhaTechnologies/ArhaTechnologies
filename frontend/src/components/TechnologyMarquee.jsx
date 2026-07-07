@@ -1,100 +1,82 @@
-import { technologyCategories } from "../data/technologyData";
 import { Link } from "react-router-dom";
+import { technologyCategories } from "../data/technologyData";
+
 export default function TechnologyMarquee() {
-	return (
-		<section className="technology-section">
 
-			<div className="container">
+  const technologies = technologyCategories.flatMap(category =>
+    category.technologies.map(tech => ({
+      ...tech,
+      color: category.color,
+    }))
+  );
 
-				<div className="technology-heading">
+  return (
+    <section className="technology-section">
 
-					<span className="technology-subtitle">
-						ENGINEERING EXCELLENCE
-					</span>
+      <div className="container">
 
-					<h2 className="gradient-text">
-						Technologies We Build With
-					</h2>
+        <div className="technology-heading">
 
-					<p>
-						We leverage industry-leading technologies to engineer
-						scalable, secure and high-performance digital products
-						that help businesses grow faster.
-					</p>
+          <span className="technology-subtitle">
+            ENGINEERING EXCELLENCE
+          </span>
 
-				</div>
+          <h2 className="gradient-text">
+            Technologies We Work With
+          </h2>
 
-				<div className="technology-marquee">
+          <p>
+            We leverage industry-leading technologies to build
+            scalable, secure and future-ready digital solutions.
+          </p>
 
-					<div className="technology-track">
+        </div>
 
-						{[...technologyCategories,
-						...technologyCategories].map((category, index) => (
+        <div className="technology-marquee">
 
-							<div
-								className="technology-card"
-								key={index}
-							>
+          <div className="technology-track">
 
-								<h3
-									style={{
-										color: category.color
-									}}
-								>
-									{category.title}
-								</h3>
+            {[...technologies, ...technologies].map((tech, index) => {
 
-								<div className="technology-list">
+              const Icon = tech.icon;
 
-									{category.technologies.map((tech, i) => {
+              return (
 
-										const Icon = tech.icon;
+                <Link
+                  key={index}
+                  to={`/technology/${tech.slug}`}
+                  className="technology-pill"
+                >
 
-										return (
+                  <div
+                    className="technology-pill-icon"
+                    style={{
+                      background: `${tech.color}15`,
+                      border: `1px solid ${tech.color}40`
+                    }}
+                  >
 
-											<Link
-												to={`/technology/${tech.slug}`}
-												className="technology-item"
-												key={i}
-											>
+                    <Icon
+                      size={18}
+                      color={tech.color}
+                    />
 
-												<div
-													className="technology-icon"
-													style={{
-														background: `${category.color}18`,
-														border: `1px solid ${category.color}40`
-													}}
-												>
+                  </div>
 
-													<Icon
-														size={18}
-														color={category.color}
-													/>
+                  <span>{tech.name}</span>
 
-												</div>
+                </Link>
 
-												<span>
-													{tech.name}
-												</span>
+              );
 
-											</Link>
+            })}
 
-										);
+          </div>
 
-									})}
+        </div>
 
-								</div>
+      </div>
 
-							</div>
-
-						))}
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
-	);
+    </section>
+  );
 }

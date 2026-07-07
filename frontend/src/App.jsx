@@ -14,6 +14,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Chatbot from './components/Chatbot';
 import Preloader from './components/Preloader';
+import Industries from "./pages/Industries";
 
 // Scroll to Top on route change helper
 function ScrollToTop() {
@@ -46,6 +47,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+			<Route path="/industries" element={<Industries />} />
             <Route path="/technology/:slug" element={<TechDetail />} />
             <Route path="/industry/:slug" element={<IndustryDetail />} />
             <Route path="/careers" element={<Careers />} />

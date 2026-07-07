@@ -60,7 +60,7 @@ export default function Footer() {
                 let path = '/';
                 if (item === 'About Us') path = '/about';
                 else if (item === 'Services') path = '/services';
-                else if (item === 'Industry') path = '/industry';
+                else if (item === 'Industry') path = '/industries';
                 else if (item === 'Careers') path = '/careers';
                 else if (item === 'Contact Us') path = '/contact';
 
@@ -110,6 +110,7 @@ export default function Footer() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '14px' }}>
                   <a href="tel:+919099322463" className="contact-link">+91 90993 22463</a>
                   <a href="tel:+916353488481" className="contact-link">+91 63534 88481</a>
+				  <a href="tel:+917600432463" className="contact-link">+91 76004 32463</a>
                 </div>
               </li>
               <li style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>

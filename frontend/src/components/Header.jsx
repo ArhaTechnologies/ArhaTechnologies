@@ -93,6 +93,7 @@ const industryCategories = [
       { slug: 'government',    name: 'Government Portals',   emoji: '🏛️', desc: 'Accessible civic permitting portals' },
     ]
   }
+  
 ];
 
 export default function Header() {
@@ -412,6 +413,36 @@ export default function Header() {
                           </div>
                         ))}
                       </div>
+					  {/* Footer */}
+<div
+  style={{
+    borderTop: "1px solid var(--color-border)",
+    marginTop: "16px",
+    paddingTop: "12px",
+  }}
+>
+  <Link
+    to="/industries"
+    onClick={() => setIndustriesOpen(false)}
+    style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: "6px",
+      padding: "10px",
+      borderRadius: "10px",
+      fontSize: "12.5px",
+      fontWeight: "700",
+      color: "var(--color-primary)",
+      background: "rgba(59,130,246,0.07)",
+      textDecoration: "none",
+      transition: "background 0.2s",
+    }}
+    className="mega-footer-link"
+  >
+    View All Industries <ArrowUpRight size={13} />
+  </Link>
+</div>
                     </div>
                   </li>
                 );
