@@ -258,7 +258,7 @@ export default function Industries() {
             zIndex: 0
           }} />
           <img
-            src="/industries_hero.png"
+            src="/industries_hero.jpeg"
             alt="Digital services ecosystem illustration"
             style={{
               maxWidth: '380px',
