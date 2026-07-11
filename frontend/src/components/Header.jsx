@@ -156,7 +156,7 @@ export default function Header() {
 
 	return (
 		<header
-  className={`site-header ${isScrolled ? "glass-nav scrolled" : "glass-nav"}`}
+  className={`site-header ${isScrolled ? "glass-nav scrolled" : ""}`}
   style={{
     position: "fixed",
     top: 0,

@@ -235,8 +235,8 @@ button, input, textarea, select {
 /* Glassmorphic utilities */
 .glass-card {
   background: var(--color-bg-card);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--color-border);
   border-radius: 16px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -252,8 +252,8 @@ button, input, textarea, select {
 
 .glass-nav {
     background: rgba(6, 9, 19, 0.75);
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+	backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--color-border);
 }
 
