@@ -157,7 +157,7 @@ export default function Header() {
 	return (
 		<header
 			style={{ position: "fixed", top: 0, left: 0, width: "100%", zIndex: 9999, transition: "all 0.3s ease", padding: "12px 0" }}
-			className={isScrolled ? "glass-nav" : ""}
+			className={`glass-nav ${isScrolled ? "scrolled" : ""}`}
 		>
 			<div className="container header-grid">
 
