@@ -226,6 +226,8 @@ app.post('/api/apply', async (req, res) => {
               ${portfolioUrl ? `<a href="${portfolioUrl}" target="_blank">${portfolioUrl}</a>` : 'Not provided'}
             </td>
           </tr>
+
+		  
           <tr>
             <td style="padding: 8px 0; font-weight: bold; vertical-align: top;">Cover Message:</td>
             <td style="padding: 8px 0; white-space: pre-wrap; line-height: 1.5;">${message || 'No additional statement provided.'}</td>
@@ -259,7 +261,10 @@ app.use(express.static(frontendPath));
 
 app.get("*", (req, res) => {
 	if (req.path.startsWith("/api")) {
-		return res.status(404).end();
+		return res.status(404).json({
+			success: false,
+			message: "API endpoint not found."
+		});
 	}
 
 	res.sendFile(path.join(frontendPath, "index.html"));
