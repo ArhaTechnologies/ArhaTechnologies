@@ -450,14 +450,14 @@ section {
 
 /* Global responsive page wrapper spacing from fixed header */
 .page-wrapper {
-  padding-top: 65px;
+  padding-top: 105px;
   min-height: 90vh;
   box-sizing: border-box;
 }
 
 @media (max-width: 991px) {
   .page-wrapper {
-    padding-top: 55px !important;
+    padding-top: 105px !important;
   }
 }
 
