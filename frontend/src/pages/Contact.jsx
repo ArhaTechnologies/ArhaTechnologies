@@ -25,7 +25,7 @@ export default function Contact() {
     setStatus({ submitting: true, success: null, message: '' });
 
     try {
-      const response = await fetch('https://arha-backend-422u.onrender.com/api/contact', {
+      const response = await fetch('https://arhatechnologies.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

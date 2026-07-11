@@ -51,7 +51,7 @@ export default function Careers() {
     setStatus({ submitting: true, success: null, message: '' });
 
     try {
-      const response = await fetch('https://arha-backend-422u.onrender.com/api/apply', {
+      const response = await fetch('https://arhatechnologies.com/api/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
